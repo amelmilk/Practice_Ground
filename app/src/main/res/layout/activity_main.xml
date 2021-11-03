@@ -17,8 +17,13 @@
             android:id="@+id/move001"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:layout_marginStart="@dimen/cardview_default_radius"
             android:text="@string/PBP" /> <!-- Practice Button Place -->
+
+        <Button
+            android:id="@+id/move002"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="자바 연습"/>
 
 
     </LinearLayout>
@@ -32,7 +37,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/move002"
+            android:id="@+id/move101"
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:text="@string/P_layout" />

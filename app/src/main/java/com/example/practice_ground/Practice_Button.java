@@ -1,5 +1,6 @@
 package com.example.practice_ground;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -18,6 +19,7 @@ public class Practice_Button extends Activity {
     Button btn4;
     Button btn5;
     EditText edit1;
+    Button btn6;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class Practice_Button extends Activity {
         btn4 = (Button)findViewById(R.id.btnhidden1);
         btn5 = (Button)findViewById(R.id.btnhidden2);
         edit1 = (EditText)findViewById(R.id.edit001);
+        btn6 = (Button)findViewById(R.id.btnnew);
 
         btn3.setVisibility(View.GONE);
         edit1.setVisibility(View.GONE);
@@ -89,6 +92,14 @@ public class Practice_Button extends Activity {
                 // Intent는 컴포넌트간의 통신을 맡고 있다
                 // Intent.ACTION_VIEW에 뭐가 들어오는지에 따라 실행방향이 결정된다
                 // toString 메서드는 객체가 가지고 있는 정보나 값들을 문자열로 만들어 리턴하는 메소드이다
+            }
+        });
+
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
             }
         });
 

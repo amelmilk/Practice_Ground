@@ -8,4 +8,5 @@
     <string name="showedittoast">에딧텍스트 출력</string>
     <string name="openediturl">에딧텍스트 주소 열기</string>
     <string name="btnclose">에딧텍스트 닫기</string>
+    <string name="btnnew">새 버튼 추가하기</string>
 </resources>
