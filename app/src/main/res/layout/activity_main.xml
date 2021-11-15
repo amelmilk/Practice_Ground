@@ -23,7 +23,13 @@
             android:id="@+id/move002"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:text="자바 연습"/>
+            android:text="@string/practice_widget" />
+
+        <Button
+            android:id="@+id/move003"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="4-2장" />
 
 
     </LinearLayout>
@@ -41,6 +47,18 @@
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:text="@string/P_layout" />
+
+        <Button
+            android:id="@+id/move102"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="@string/spinsize" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/move103"
+            android:text="텍스트"/>
 
     </LinearLayout>
 

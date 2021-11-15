@@ -9,4 +9,9 @@
     <string name="openediturl">에딧텍스트 주소 열기</string>
     <string name="btnclose">에딧텍스트 닫기</string>
     <string name="btnnew">새 버튼 추가하기</string>
+    <string name="spinsize">회전 연습</string>
+    <string name="choosegender">성별 선택</string>
+    <string name="female">여성</string>
+    <string name="male">남성</string>
+    <string name="practice_widget">위젯 연습</string>
 </resources>

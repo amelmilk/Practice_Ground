@@ -14,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
     Button move001;
     Button move101;
     Button move002;
-
+    Button move102;
+    Button move003;
+    Button move103;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         move001 = (Button)findViewById(R.id.move001);
         move101 = (Button)findViewById(R.id.move101);
         move002 = (Button)findViewById(R.id.move002);
+        move102 = (Button)findViewById(R.id.move102);
+        move003 = (Button)findViewById(R.id.move003);
+        move103 = (Button)findViewById(R.id.move103);
 
 
         move001.setOnClickListener(new View.OnClickListener() { // 새로운 화면을 띄우는 명령, 새 클래스를 만들었으면 manifests에 꼭 등록해야한다
@@ -35,11 +40,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        move101.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
         move002.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Practice_Java.class);
+                Intent intent = new Intent(getApplicationContext(), View_Class.class);
                 startActivity(intent); // 반드시 Intent intent일 필요는 없다 변수 이름을 지정해주는것, Intent a로 해도 상관x
+            }
+        });
+
+        move102.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Practice_Spinsize.class);
+                startActivity(intent);
+            }
+        });
+
+        move003.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Practice4_2.class);
+                startActivity(intent);
+            }
+        });
+
+        move103.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Practice_Text.class);
+                startActivity(intent);
             }
         });
 

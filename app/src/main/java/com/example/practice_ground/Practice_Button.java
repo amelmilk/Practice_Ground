@@ -28,13 +28,13 @@ public class Practice_Button extends Activity {
         //새로운 액티비티를 생성하면 위 코드를 반드시 입력해야한다
         // onCreate에서 on만 쳐도 자동입력이 나오니 간단히 할 수 있다
         // 마지막으로 setContentView를 입력해서 불러올 레이아웃을 설정
-        btn1 = (Button)findViewById(R.id.btntoast);
-        btn2 = (Button)findViewById(R.id.btnopen);
-        btn3 = (Button)findViewById(R.id.btnclose);
-        btn4 = (Button)findViewById(R.id.btnhidden1);
-        btn5 = (Button)findViewById(R.id.btnhidden2);
-        edit1 = (EditText)findViewById(R.id.edit001);
-        btn6 = (Button)findViewById(R.id.btnnew);
+        btn1 = (Button) findViewById(R.id.btntoast);
+        btn2 = (Button) findViewById(R.id.btnopen);
+        btn3 = (Button) findViewById(R.id.btnclose);
+        btn4 = (Button) findViewById(R.id.btnhidden1);
+        btn5 = (Button) findViewById(R.id.btnhidden2);
+        edit1 = (EditText) findViewById(R.id.edit001);
+        btn6 = (Button) findViewById(R.id.btnnew);
 
         btn3.setVisibility(View.GONE);
         edit1.setVisibility(View.GONE);
@@ -47,7 +47,7 @@ public class Practice_Button extends Activity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "호우!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "호우!", Toast.LENGTH_SHORT).show();
                 // 기본적인 토스트 메세지 출력문
             }
         });
@@ -79,7 +79,7 @@ public class Practice_Button extends Activity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), edit1.getText(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), edit1.getText(), Toast.LENGTH_SHORT).show();
                 // edittext에서 불러오고싶다면 해당 객체의 주소에서 불러오는 명령어 getText()를 쓴다
             }
         });
@@ -105,7 +105,6 @@ public class Practice_Button extends Activity {
 
 
     }
-
 
 
 }

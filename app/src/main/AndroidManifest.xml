@@ -19,7 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Practice_Button" />
-        <activity android:name=".Practice_Java"/>
+        <activity android:name=".Practice_Spinsize"/>
+        <activity android:name=".View_Class"/>
+        <activity android:name=".Practice4_2"/>
+        <activity android:name=".Practice_Text"/>
 
     </application>
 
