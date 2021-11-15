@@ -23,6 +23,7 @@
         <activity android:name=".View_Class"/>
         <activity android:name=".Practice4_2"/>
         <activity android:name=".Practice_Text"/>
+        <activity android:name=".Practice_Calc"/>
 
     </application>
 
