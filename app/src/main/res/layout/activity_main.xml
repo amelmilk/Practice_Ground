@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:baselineAligned="false">
     <!--ctrl + alt + L = 코드정렬-->
 
     <!--레이아웃을 2개로 나눔으로써 양방향으로 버튼을 정리함-->
