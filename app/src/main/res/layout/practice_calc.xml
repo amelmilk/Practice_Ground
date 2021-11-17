@@ -12,12 +12,14 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"/>
+    <!--inputType으로 에딧텍스트의 입력방식에 제한을 걸 수 있다-->
 
     <EditText
         android:id="@+id/ed2"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal|numberSigned"/>
+    <!--numberDecimal은 소수점이 가능한 10진수 숫자만 입력가능하게 하고, numberSigned는 음수 표시를 가능하게 한다-->
 
     <Button
         android:id="@+id/btn1"

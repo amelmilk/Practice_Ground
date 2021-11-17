@@ -23,7 +23,7 @@
             android:id="@+id/move002"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:text="@string/practice_widget" />
+            android:text="버튼 돌리기, 감추기" />
 
         <Button
             android:id="@+id/move003"
@@ -65,6 +65,12 @@
             android:layout_height="100dp"
             android:id="@+id/move103"
             android:text="텍스트"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="@string/practice_widget"
+            android:id="@+id/move104"/>
 
     </LinearLayout>
 

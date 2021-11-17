@@ -3,7 +3,6 @@ package com.example.practice_ground;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.os.Binder;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button move002;
     Button move102;
     Button move003, move004;
-    Button move103;
+    Button move103, move104;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         move003 = (Button)findViewById(R.id.move003);
         move103 = (Button)findViewById(R.id.move103);
         move004 = (Button)findViewById(R.id.move004);
+        move104 = (Button)findViewById(R.id.move104);
 
 
         move001.setOnClickListener(new View.OnClickListener() { // 새로운 화면을 띄우는 명령, 새 클래스를 만들었으면 manifests에 꼭 등록해야한다
@@ -85,6 +85,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Practice_Calc.class);
+                startActivity(intent);
+            }
+        });
+
+        move104.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Practice_Widget.class);
                 startActivity(intent);
             }
         });
