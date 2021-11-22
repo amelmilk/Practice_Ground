@@ -45,7 +45,9 @@ public class MainActivity extends AppCompatActivity {
         move101.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(getApplicationContext(), Practice_Layout.class));
+                // 굳이 Intent intent 선언하고 startActivity 따로할필요 없이
+                // 바아로 startActivity(new Intent)해도 된다
             }
         });
 
