@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.translation.ViewTranslationCallback;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -40,7 +42,7 @@ public class Practice_4P extends Activity {
         c1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (c1.isChecked()){
+                if (c1.isChecked()) {
                     b1.setEnabled(false);
                 } else {
                     b1.setEnabled(true);
@@ -53,7 +55,7 @@ public class Practice_4P extends Activity {
         c2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(c2.isChecked()){
+                if (c2.isChecked()) {
                     b1.setClickable(false);
                 } else {
                     b1.setClickable(true);
@@ -65,7 +67,7 @@ public class Practice_4P extends Activity {
         c3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(c3.isChecked()){
+                if (c3.isChecked()) {
                     b1.setRotation(45);
                 } else {
                     b1.setRotation(0);
@@ -86,17 +88,16 @@ public class Practice_4P extends Activity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                a = a+10;
+                a = a + 10;
                 im1.setRotation(a);
-                if (a==360){
+                if (a == 360) { // 각도가 360이 되었을경우
                     Toast.makeText(getApplicationContext(), "치야아아아아앗!!", Toast.LENGTH_SHORT).show();
-                    a=0;
+                    a = 0;
+                    // 0으로 조정하고 메세지 출력
                 }
             }
         }); // 앞서 선언된 변수 a값을 받아와서 버튼이 눌릴때마다 a값에 10을 더하고
         // 더한값을 불러와서 적용시킨다
-
-
 
     }
 }
