@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -27,10 +28,10 @@ public class Practice_Widget extends Activity {
         rGroup1 = (RadioGroup) findViewById(R.id.rGroup1);
         // 라디오그룹에서 가끔 사용되는 메소드는 clearCheck()인데, 그룹안에 체크된걸 모두 해제해준다
 
-        check1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {// 체크박스는 new Compound쳐야됨
+        check1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // 체크박스는 new Compound쳐야됨
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
+                Toast.makeText(getApplicationContext(), "쳌쳌", Toast.LENGTH_SHORT).show();
             }
         });
 

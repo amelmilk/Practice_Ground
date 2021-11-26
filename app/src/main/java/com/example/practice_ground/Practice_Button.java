@@ -1,5 +1,7 @@
 package com.example.practice_ground;
 
+import static android.graphics.Color.RED;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
@@ -49,6 +51,8 @@ public class Practice_Button extends Activity {
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "호우!", Toast.LENGTH_SHORT).show();
                 // 기본적인 토스트 메세지 출력문
+                //btn1.setBackgroundColor(RED);
+                // 버튼 색을 바꾸는 명령어
             }
         });
 
@@ -102,6 +106,7 @@ public class Practice_Button extends Activity {
 
             }
         });
+
 
 
     }

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button move101;
     Button move002;
     Button move102;
-    Button move003, move004;
+    Button move003, move004, move005;
     Button move103, move104;
 
     @Override
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         move103 = (Button)findViewById(R.id.move103);
         move004 = (Button)findViewById(R.id.move004);
         move104 = (Button)findViewById(R.id.move104);
+        move005 = (Button)findViewById(R.id.move005);
 
 
         move001.setOnClickListener(new View.OnClickListener() { // 새로운 화면을 띄우는 명령, 새 클래스를 만들었으면 manifests에 꼭 등록해야한다
@@ -96,6 +97,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Practice_Widget.class);
                 startActivity(intent);
+            }
+        });
+
+        move005.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Practice_4P.class));
             }
         });
 

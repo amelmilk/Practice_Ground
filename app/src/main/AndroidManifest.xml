@@ -25,6 +25,7 @@
         <activity android:name=".Practice_Text"/>
         <activity android:name=".Practice_Calc"/>
         <activity android:name=".Practice_Widget"/>
+        <activity android:name=".Practice_4P"/>
 
     </application>
 
