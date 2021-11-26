@@ -88,9 +88,9 @@ public class Practice_4P extends Activity {
             public void onClick(View v) {
                 a = a+10;
                 im1.setRotation(a);
-
             }
-        });
+        }); // 앞서 선언된 변수 a값을 받아와서 버튼이 눌릴때마다 a값에 10을 더하고
+        // 더한값을 불러와서 적용시킨다
 
 
 
