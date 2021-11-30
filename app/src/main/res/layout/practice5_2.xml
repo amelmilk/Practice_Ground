@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ff0000"
+        android:orientation="horizontal">
+
+        <!-- 윗쪽 레이아웃, orientation을 horizontal로 설정해서 하위 레이아웃을 왼쪽과 오른쪽으로 나눈다 -->
+        <!-- 기본 설정이 horizontal이기 때문에 설정을 하지 않아도 상관없다 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!-- 위에서 왼쪽 레이아웃, 이곳의 background를 빨간색으로 해도 된다 -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 위에서 오른쪽 레이아웃, orientation을 vertical로 설정해서 레이아웃을 윗쪽과 아랫쪽으로 나눈다 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffff00">
+
+                <!-- 오른쪽에서 윗쪽 레이아웃 -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#000000">
+
+                <!-- 오른쪽에서 아랫쪽 레이아웃 -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#0000ff">
+        <!--아랫쪽 파란색 레이아웃-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

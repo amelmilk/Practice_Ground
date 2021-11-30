@@ -79,6 +79,12 @@
             android:text="@string/practice_widget"
             android:id="@+id/move104"/>
 
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="연습문제5-2"
+            android:id="@+id/move105"/>
+
     </LinearLayout>
 
 

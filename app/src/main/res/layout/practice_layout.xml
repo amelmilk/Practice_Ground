@@ -10,7 +10,7 @@
     <!-- 리니어 레이아웃 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="match_parent"
         android:gravity="right|bottom"
         android:orientation="vertical">
         <!-- 리니어 레이아웃은 일반적으로 가장 많이 사용하게될 레이아웃이다 -->
@@ -20,18 +20,21 @@
         <!-- gravity는 레이아웃 내부 위젯을 어디에 배치할 것인지를 결정하며
        값으로 left, right, center, top, bottom등을 사용할수 있다,
        2개를 조합하여 right|bottom 등의 형태로 사용 가능하다-->
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+
         <Button
             android:layout_width="110dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:text="버튼1"
             android:gravity="top|center_horizontal"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <!-- gravity 속성이 자신에게 포함된 자식을 어디에 위치시킬지를 결정한다면,
         layout_gravity 속성은 자신의 위치를 부모의 어디에 위치시킬지를 결정한다 -->
 
@@ -61,6 +64,35 @@
                 android:textSize="30sp"/>
 
         </LinearLayout>
+
+        <!--layout_weight속성-->
+        <!--세 레이아웃의 weight를 1로 주어 1:1:1의 비율이 된다-->
+        <!--비율을 다르게 주고싶다면 layout_height를 모두 0dp로 설정한 다음 layout_weight를 원하는 비율로 지정하면 된다-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff0000"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ff00"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
 
 
     </LinearLayout>
