@@ -11,12 +11,8 @@ import android.widget.Button;
 // ctrl + space = 자동입력
 public class MainActivity extends AppCompatActivity {
     //위젯 객체 설정
-    Button move001;
-    Button move101;
-    Button move002;
-    Button move102;
-    Button move003, move004, move005;
-    Button move103, move104, move105;
+    Button move001, move002, move003, move004, move005, move006, move007, move008, move009;
+    Button move101, move102, move103, move104, move105, move106, move107, move108, move109;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         move104 = (Button)findViewById(R.id.move104);
         move005 = (Button)findViewById(R.id.move005);
         move105 = (Button)findViewById(R.id.move105);
+        move006 = (Button)findViewById(R.id.move006);
 
 
         move001.setOnClickListener(new View.OnClickListener() { // 새로운 화면을 띄우는 명령, 새 클래스를 만들었으면 manifests에 꼭 등록해야한다
@@ -112,6 +109,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Practice5_2.class));
+            }
+        });
+
+        move006.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Practice_Layout_2.class));
             }
         });
 

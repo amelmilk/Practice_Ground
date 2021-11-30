@@ -7,85 +7,168 @@
     <!--ctrl + alt + L = 코드정렬-->
 
     <!--레이아웃을 2개로 나눔으로써 양방향으로 버튼을 정리함-->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/move001"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="@string/PBP" /> <!-- Practice Button Place -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/move002"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="버튼 돌리기, 감추기" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
 
-        <Button
-            android:id="@+id/move003"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="4-2장" />
+                <Button
+                    android:id="@+id/move001"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text="@string/PBP" /> <!-- Practice Button Place -->
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:id="@+id/move004"
-            android:text="계산기" />
+                <Button
+                    android:id="@+id/move002"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text="버튼 돌리기, 감추기" />
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:id="@+id/move005"
-            android:text="4장 연습문제"/>
+                <Button
+                    android:id="@+id/move003"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text="4-2장" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/move004"
+                    android:text="초간단 계산기" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/move005"
+                    android:text="4장 연습문제"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text="자바코드로 화면 만들기"
+                    android:id="@+id/move006"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:id="@+id/move007"/>
 
 
-    </LinearLayout>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:id="@+id/move008"/>
 
-    <!--레이아웃을 2개로 나눔으로써 양방향으로 버튼을 정리함-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/move101"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="@string/P_layout" />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:id="@+id/move009"/>
 
-        <Button
-            android:id="@+id/move102"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="@string/spinsize" />
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:id="@+id/move103"
-            android:text="텍스트"/>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:id="@+id/move010"/>
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="@string/practice_widget"
-            android:id="@+id/move104"/>
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="연습문제5-2"
-            android:id="@+id/move105"/>
 
-    </LinearLayout>
+            </LinearLayout>
+
+            <!--레이아웃을 2개로 나눔으로써 양방향으로 버튼을 정리함-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/move101"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text="@string/P_layout" />
+
+                <Button
+                    android:id="@+id/move102"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text="@string/spinsize" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/move103"
+                    android:text="텍스트"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text="@string/practice_widget"
+                    android:id="@+id/move104"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text="연습문제5-2"
+                    android:id="@+id/move105"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:id="@+id/move106"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:id="@+id/move107"/>
+
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:id="@+id/move108"/>
+
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:id="@+id/move109"/>
+
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:id="@+id/move110"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 
 
 </LinearLayout>
