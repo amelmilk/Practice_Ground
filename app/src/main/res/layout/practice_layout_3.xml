@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예제 5-10"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="위쪽"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="좌측"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="우측"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="아래"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="중앙"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <Button
+                    android:id="@+id/main"
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:text="기준위젯"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignTop="@+id/main"
+                    android:layout_toLeftOf="@id/main"
+                    android:clickable="false"
+                    android:text="aligntop, toleftof"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignBaseline="@id/main"
+                    android:layout_toLeftOf="@id/main"
+                    android:clickable="false"
+                    android:text="alignbase, toleftof"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignBottom="@id/main"
+                    android:layout_toLeftOf="@id/main"
+                    android:clickable="false"
+                    android:text="alignbot, toleftof"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignLeft="@id/main"
+                    android:layout_above="@id/main"
+                    android:clickable="false"
+                    android:text="alignleft, above"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignRight="@id/main"
+                    android:layout_above="@id/main"
+                    android:clickable="false"
+                    android:text="alignright, above"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignLeft="@id/main"
+                    android:layout_below="@id/main"
+                    android:clickable="false"
+                    android:text="alignleft, below"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignRight="@id/main"
+                    android:layout_below="@id/main"
+                    android:clickable="false"
+                    android:text="alignright, below"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignTop="@+id/main"
+                    android:layout_toRightOf="@id/main"
+                    android:clickable="false"
+                    android:text="aligntop, torightof"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignBaseline="@id/main"
+                    android:layout_toRightOf="@id/main"
+                    android:clickable="false"
+                    android:text="alignbase, torightof"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignBottom="@id/main"
+                    android:layout_toRightOf="@id/main"
+                    android:clickable="false"
+                    android:text="alignbot, torightof"
+                    android:textSize="10dp"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

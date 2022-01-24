@@ -28,6 +28,7 @@
         <activity android:name=".Practice_4P"/>
         <activity android:name=".Practice5_2"/>
         <activity android:name=".Practice_Layout_2"/>
+        <activity android:name=".Practice_Layout_3"/>
 
     </application>
 
